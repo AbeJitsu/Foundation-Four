@@ -1,0 +1,119 @@
+/* Global Styles for the Application */
+/* These styles apply to the entire app - every page and component */
+
+/* ========================================================================
+Tailwind CSS Directives
+========================================================================
+These imports bring in Tailwind's base, component, and utility styles
+Think of them as:
+- @tailwind base: The foundation (reset browser defaults, set body styles)
+- @tailwind components: Pre-built components (buttons, cards, etc)
+- @tailwind utilities: The actual utility classes you use (bg-blue-500, p-4, etc)
+*/
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ========================================================================
+Custom CSS Variables
+========================================================================
+Define colors and sizes once, reuse everywhere
+Usage: background-color: var(--primary-color);
+*/
+
+:root {
+  /* Primary color - use for main buttons, links, highlights */
+  --primary-color: #3b82f6;
+
+  /* Secondary color - use for subtle elements */
+  --secondary-color: #64748b;
+
+  /* Border color - for dividers and borders */
+  --border-color: #e2e8f0;
+
+  /* Text color - main content */
+  --text-color: #1f2937;
+
+  /* Background color - page background */
+  --bg-color: #ffffff;
+}
+
+/* ========================================================================
+HTML and Body Defaults
+========================================================================
+Set up the foundation styles for the whole app
+*/
+
+html,
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    'Helvetica Neue', Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* ========================================================================
+Links - Make Them Obvious
+========================================================================
+Style links so users know they can click them
+*/
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: opacity 200ms ease;
+}
+
+a:hover {
+  opacity: 0.8;
+}
+
+/* ========================================================================
+Custom Component Classes
+========================================================================
+Define reusable component styles here (if not using Tailwind's @apply)
+*/
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* ========================================================================
+Dark Mode (Optional)
+========================================================================
+Uncomment and customize for dark mode support
+*/
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --primary-color: #60a5fa;
+    --secondary-color: #cbd5e1;
+    --border-color: #374151;
+    --text-color: #f3f4f6;
+    --bg-color: #1f2937;
+  }
+} */
+
+/* ========================================================================
+Print Styles (Optional)
+========================================================================
+Make the app look good when printed
+*/
+
+@media print {
+  body {
+    background-color: white;
+    color: black;
+  }
+
+  /* Hide interactive elements when printing */
+  nav,
+  footer,
+  [role='navigation'] {
+    display: none;
+  }
+}
