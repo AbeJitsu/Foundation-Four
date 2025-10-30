@@ -2,6 +2,8 @@
 
 A production-ready, containerized web application template that gets you from zero to production in minutes. Everything runs in Docker, works identically on your laptop and in the cloud, and includes best practices baked in.
 
+> **For Template Developers:** If you're building or modifying this template, see [CLAUDE.md](./CLAUDE.md) for build instructions and documentation standards.
+
 ## What This Template Does
 
 This template connects four essential pieces that work together seamlessly: **Nginx** (your traffic manager), **Next.js** (your application), **Redis** (your fast cache), and **Supabase** (your database). Clone this, fill in a few settings, and you have a complete, scalable application ready to customize. No more "how do I set up a production server?" — it's done. You focus on building features.

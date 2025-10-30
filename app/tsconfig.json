@@ -1,4 +1,18 @@
 {
+  // ========================================================================
+  // TypeScript Configuration for Next.js
+  // ========================================================================
+  // TypeScript is like a strict teacher for your JavaScript code.
+  // It catches mistakes BEFORE they reach production - preventing bugs
+  // that could embarrass you in front of users.
+  //
+  // This config is optimized for Next.js App Router, and includes
+  // path aliases (@/) so you can import cleaner:
+  // Instead of: import { thing } from '../../../lib/thing'
+  // You write:  import { thing } from '@/lib/thing'
+  //
+  // The @ prefix means "from the root of my project" - much cleaner!
+
   "compilerOptions": {
     // ====================================================================
     // Compilation Target and Module System
